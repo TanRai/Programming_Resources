@@ -28,7 +28,6 @@ int main(){
 
   // Stack from vector
   vector<int> vec = {1, 2, 3, 4, 5};
-  stack<int> s2(vec.begin(), vec.end());
 
   return 0;
 }
