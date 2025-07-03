@@ -47,5 +47,21 @@ int main() {
     }
     cout << endl;
 
+    // Delete element of a specific value
+    vec.erase(remove(vec.begin(), vec.end(), 20), vec.end());
+
+    //Insert an element at a specific position
+    vec.insert(vec.begin() + 1, 15); // Insert 15 at index 1
+
+    //concatenate two vectors
+    vector<int> vec3 = {40, 50, 60};
+
+    vec.insert(vec.end(), vec3.begin(), vec3.end());
+    cout << "Elements in the vector after concatenation: ";
+    for (int i = 0; i < vec.size(); i++) {
+        cout << vec[i] << " ";
+    }
+
+
     return 0;
 }

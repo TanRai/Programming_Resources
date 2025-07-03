@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
   // Declare a priority queue of integers
-  priority_queue<int> pq;
+  priority_queue<int> pq; //max heap by default
 
   // Push elements onto the priority queue
   pq.push(30);
@@ -55,7 +55,7 @@ int main(){
       }
   };
 
-  priority_queue<pair<int, int>, vector<pair<int, int>>, CustomCompare> customPQ;
+  priority_queue<pair<int, int>, vector<pair<int, int>>, CustomCompare> customPQ;// Costructor type,container,comaparator
   customPQ.push({3, 1});
   customPQ.push({1, 2});
   customPQ.push({2, 3});
